@@ -13,6 +13,7 @@ values=[]
 for val in values_file:
     values.append(val.split(","))
 
+
 with open (path) as input_file:
     info_lines=input_file.read().replace("R5.0\n", "").split("/GOPR,")[0].split("SFE,")
     info_lines.pop(0)
